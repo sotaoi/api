@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "declaration": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "module": "commonjs",
+    "isolatedModules": true,
+    "noEmitOnError": true
+  },
+  "exclude": ["./deployment", "./scripts", "./tmp.deployment", "./var", "./**/*.js"]
+}

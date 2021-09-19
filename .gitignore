@@ -1,0 +1,4 @@
+/deployment/*
+!/deployment/.gitkeep
+**/node_modules/**
+/tmp.deployment/*
