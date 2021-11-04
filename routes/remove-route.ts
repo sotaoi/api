@@ -7,7 +7,7 @@ import { ErrorCode } from '@sotaoi/omni/errors';
 
 const removeRoute: ServerRoute = {
   method: 'POST',
-  path: '/api/remove',
+  path: '/n-api/remove',
   options: {
     payload: payloadOptions,
   },

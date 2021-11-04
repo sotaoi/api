@@ -7,7 +7,7 @@ import { ErrorCode } from '@sotaoi/omni/errors';
 
 const authRoute: ServerRoute = {
   method: 'POST',
-  path: '/api/auth',
+  path: '/n-api/auth',
   options: {
     payload: payloadOptions,
   },

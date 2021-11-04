@@ -7,7 +7,7 @@ import { ErrorCode } from '@sotaoi/omni/errors';
 
 const retrieveRoute: ServerRoute = {
   method: 'POST',
-  path: '/api/retrieve',
+  path: '/n-api/retrieve',
   options: {
     payload: payloadOptions,
   },

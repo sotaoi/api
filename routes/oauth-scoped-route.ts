@@ -15,7 +15,7 @@ const setVerifyToken = (verifyTokenFn: (oauthAccessToken: null | string, scope: 
 
 const oauthScopedRoute: ServerRoute = {
   method: 'POST',
-  path: '/api/oauth-scoped-route/{scope}',
+  path: '/n-api/oauth-scoped-route/{scope}',
   options: {
     payload: payloadOptions,
   },

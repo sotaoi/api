@@ -67,7 +67,7 @@ class Server {
       });
 
       server.route(greetingRoute('/'));
-      server.route(greetingRoute('/api'));
+      server.route(greetingRoute('/n-api'));
       server.route(statusRoute);
       server.route(seedRoute);
 
@@ -96,8 +96,8 @@ class Server {
             method: async (request, reply) => {
               if (
                 !appMaintenanceFlag ||
-                request.url.pathname === '/api/seed' ||
-                request.url.pathname === '/api/status'
+                request.url.pathname === '/n-api/seed' ||
+                request.url.pathname === '/n-api/status'
               ) {
                 return reply.continue;
               }

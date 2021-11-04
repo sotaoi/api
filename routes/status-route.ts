@@ -6,7 +6,7 @@ import { Store } from '@sotaoi/api/store';
 
 const statusRoute: ServerRoute = {
   method: 'GET',
-  path: '/api/status',
+  path: '/n-api/status',
   handler: async (request: Request, handler: ResponseToolkit): Promise<ResponseObject> => {
     try {
       return new MsgResult<ResponseObject>(200, null, 'API Status', 'Served API Status', {

@@ -10,7 +10,7 @@ import { Store } from '@sotaoi/api/store';
 
 const seedRoute: ServerRoute = {
   method: 'GET',
-  path: '/api/seed',
+  path: '/n-api/seed',
   handler: async (request: Request, handler: ResponseToolkit): Promise<ResponseObject> => {
     try {
       let authRecord: null | AuthRecord = null;

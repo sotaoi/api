@@ -7,7 +7,7 @@ import { ErrorCode } from '@sotaoi/omni/errors';
 
 const taskRoute: ServerRoute = {
   method: 'POST',
-  path: '/api/task',
+  path: '/n-api/task',
   options: {
     payload: payloadOptions,
   },

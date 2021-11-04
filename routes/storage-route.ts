@@ -5,7 +5,7 @@ import { ErrorCode } from '@sotaoi/omni/errors';
 
 const storageRoute: ServerRoute = {
   method: 'GET',
-  path: '/api/storage/{drive}/{role}/{dap*}',
+  path: '/n-api/storage/{drive}/{role}/{dap*}',
   handler: async (request: Request, handler: ResponseToolkit): Promise<ResponseObject> => {
     try {
       const dapSplit = request.params.dap.split('/');

@@ -7,7 +7,7 @@ import { ErrorCode } from '@sotaoi/omni/errors';
 
 const deauthRoute: ServerRoute = {
   method: 'DELETE',
-  path: '/api/auth',
+  path: '/n-api/auth',
   options: {
     payload: payloadOptions,
   },
