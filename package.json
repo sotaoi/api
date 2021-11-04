@@ -3,6 +3,18 @@
   "private": false,
   "version": "0.9.2",
   "description": "",
+  "deploymentScheme": {
+    "init": "npm run deploy:sapi",
+    "copy": {
+      "skip": false,
+      "src": "./deployment",
+      "exclude": [
+        "./node_modules"
+      ]
+    },
+    "catch": "",
+    "conclude": "npm run clean:sapi"
+  },
   "engines": {
     "node": "14.x"
   },
