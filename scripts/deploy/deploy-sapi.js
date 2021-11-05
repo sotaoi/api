@@ -44,6 +44,32 @@ const main = async () => {
     [path.resolve('./deployment/node_modules')],
   );
 
+  Helper.iterateRecursiveSync(
+    fs,
+    path,
+    path.resolve('./deployment/db/migrations'),
+    (item) => {
+      if (item.substr(-5) !== '.d.ts') {
+        return;
+      }
+      fs.unlinkSync(item);
+    },
+    [path.resolve('./deployment/node_modules')],
+  );
+
+  Helper.iterateRecursiveSync(
+    fs,
+    path,
+    path.resolve('./deployment/db/seeds'),
+    (item) => {
+      if (item.substr(-5) !== '.d.ts') {
+        return;
+      }
+      fs.unlinkSync(item);
+    },
+    [path.resolve('./deployment/node_modules')],
+  );
+
   //
 };
 
