@@ -20,7 +20,6 @@
   },
   "scripts": {
     "bootstrap": "npm install --force --no-audit --no-fund",
-    "bootstrap:prod": "npm install --production --force --no-audit --no-fund",
     "deploy:sapi": "node ./scripts/deploy/deploy-sapi",
     "clean:bootstrap": "node ./scripts/clean/clean-bootstrap",
     "clean:sapi": "node ./scripts/clean/clean-sapi"
