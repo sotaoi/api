@@ -12,11 +12,16 @@ const main = async () => {
   fs.mkdirSync(path.resolve('./deployment'));
   fs.writeFileSync(path.resolve('./deployment/.gitkeep'), '');
 
+  const packageJson = JSON.parse(fs.readFileSync(path.resolve('./package.json')).toString());
+
   Helper.copyRecursiveSync(fs, path, path.resolve('./'), path.resolve('./deployment'), [
     path.resolve('.git'),
     path.resolve('./deployment'),
     path.resolve('./node_modules'),
   ]);
+
+  delete packageJson.devDependencies;
+  fs.writeFileSync(path.resolve('./deployment/package.json'), JSON.stringify(packageJson, null, 2));
 
   execSync('npx tsc', { cwd: path.resolve('./deployment'), stdio: 'inherit' });
   fs.unlinkSync(path.resolve('./deployment/tsconfig.json'));
