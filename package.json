@@ -1,7 +1,7 @@
 {
   "name": "@sotaoi/api",
   "private": false,
-  "version": "0.9.11",
+  "version": "1.0.0",
   "description": "",
   "deploymentScheme": {
     "init": "npm run deploy:sapi",
